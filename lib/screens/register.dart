@@ -59,22 +59,9 @@ class _RegisterState extends State<Register> {
                   ElevatedButton(
                     key: const ValueKey("createAccount"),
                     onPressed: () async {
-                      authController.createUser(email: _emailController.text, password: _passwordController.text);
-                      // final String retVal =
-                      // await context.read<Auth>().createAccount(
-                      //   email: _emailController.text,
-                      //   password: _passwordController.text,
-                      // );
-                      // if (retVal == "Success") {
-                      //   _emailController.clear();
-                      //   _passwordController.clear();
-                      // } else {
-                      //   ScaffoldMessenger.of(context).showSnackBar(
-                      //     SnackBar(
-                      //       content: Text(retVal),
-                      //     ),
-                      //   );
-                      // }
+                      authController.createUser(
+                          email: _emailController.text,
+                          password: _passwordController.text);
                     },
                     child: const Text("Create Account"),
                   ),
