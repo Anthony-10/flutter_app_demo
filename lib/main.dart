@@ -5,7 +5,7 @@ import 'package:flutter_app_demo/screens/login.dart';
 import 'package:flutter_app_demo/screens/register.dart';
 import 'package:get/get.dart';
 
-import 'controllers/binding/auth_binding.dart';
+import 'controllers/binding/register_binding.dart';
 import 'controllers/register_status/register_status.dart';
 
 Future<void> main() async {
@@ -26,13 +26,13 @@ class MyApp extends StatelessWidget {
       ),
       getPages: [
         GetPage(
-            name: "register", page: () => Register(), binding: AuthBinding()),
-        GetPage(name: "login", page: () => Login(), binding: AuthBinding()),
-        GetPage(name: "home", page: () => Home(), binding: AuthBinding()),
+            name: "register", page: () => Register(), binding: RegisterBinding()),
+        GetPage(name: "login", page: () => Login(), binding: RegisterBinding()),
+        GetPage(name: "home", page: () => Home(), binding: RegisterBinding()),
         GetPage(
             name: "registerStatus",
             page: () => RegisterStatus(),
-            binding: AuthBinding())
+            binding: RegisterBinding())
       ],
       initialRoute: "registerStatus",
     );

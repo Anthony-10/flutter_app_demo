@@ -3,7 +3,7 @@ import 'dart:io';
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
 
-class RegisterController extends GetxController{
+class ImageController extends GetxController{
   var selectedImagePath = ''.obs;
   var selectedImageSize = ''.obs;
 

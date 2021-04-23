@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app_demo/controllers/auth_controller.dart';
+import 'package:flutter_app_demo/controllers/auth_controller/auth_controller.dart';
 import 'package:get/get.dart';
 
 class Login extends StatefulWidget {
