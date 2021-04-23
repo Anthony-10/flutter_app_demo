@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
             page: () => RegisterStatus(),
             binding: AuthBinding())
       ],
-      initialRoute: "register",
+      initialRoute: "registerStatus",
     );
   }
 }

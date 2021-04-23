@@ -21,7 +21,7 @@ class AuthController extends GetxController {
     } on FirebaseAuthException catch (e) {
       Get.snackbar("Error creating account", e.message,
           snackPosition: SnackPosition.BOTTOM);
-    }  catch (e){
+    } catch (e) {
       rethrow;
     }
   }
@@ -33,7 +33,7 @@ class AuthController extends GetxController {
     } on FirebaseAuthException catch (e) {
       Get.snackbar("Error login account", e.message,
           snackPosition: SnackPosition.BOTTOM);
-    } catch (e){
+    } catch (e) {
       rethrow;
     }
   }

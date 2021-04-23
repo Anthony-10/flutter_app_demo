@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class Home extends StatefulWidget {
   @override
   _HomeState createState() => _HomeState();
@@ -9,8 +8,10 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
-      body: Text('WEWE'),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Feel at home'),
+      ),
     );
   }
 }

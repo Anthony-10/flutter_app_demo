@@ -2,14 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app_demo/controllers/auth_controller.dart';
 import 'package:get/get.dart';
 
-
 class Login extends StatefulWidget {
   @override
   _LoginState createState() => _LoginState();
 }
 
 class _LoginState extends State<Login> {
-
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
 
@@ -46,31 +44,20 @@ class _LoginState extends State<Login> {
                 ElevatedButton(
                   key: const ValueKey("signIn"),
                   onPressed: () async {
-                    authController.logIn(email: _emailController.text, password: _passwordController.text);
-
-                    // final String retVal = await context.read<Auth>().signIn(
-                    //   email: _emailController.text,
-                    //   password: _passwordController.text,
-                    // );
-                    // if (retVal == "Success") {
-                    //   _emailController.clear();
-                    //   _passwordController.clear();
-                    // } else {
-                    //   ScaffoldMessenger.of(context).showSnackBar(
-                    //     SnackBar(
-                    //       content: Text(retVal),
-                    //     ),
-                    //   );
-                    // }
+                    authController.logIn(
+                        email: _emailController.text,
+                        password: _passwordController.text);
                   },
                   child: const Text("Sign In"),
                 ),
                 const SizedBox(
                   height: 20,
                 ),
-                TextButton(onPressed: () {
-                  Get.toNamed('register');
-                }, child:  const Text('Dont have an account SignIn '))
+                TextButton(
+                    onPressed: () {
+                      Get.toNamed('register');
+                    },
+                    child: const Text('Dont have an account SignIn '))
               ],
             );
           }),
